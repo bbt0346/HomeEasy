@@ -19,7 +19,7 @@ const Header = () => {
 
   // const [selectedIndex, setSelectedIndex] = useState(0);
   const form_data = useFlowGetStartedStore((state) => state.form_data);
-  const setFormData = useFlowGetStartedStore((state) => state.setFormData);
+  // const setFormData = useFlowGetStartedStore((state) => state.setFormData);
   const google_api_loaded = useFlowGetStartedStore(
     (state) => state.google_api_loaded
   );
@@ -39,29 +39,7 @@ const Header = () => {
     router.push(`/get_started?flow=sell&step=1`);
   }
 
-  useEffect(() => {
-    // false && console.log(selectedChip);
-    if (google_api_loaded) {
-      autoCompleteRef.current = getSuggestionsWidgetAddressOnly(searchInputRef);
-      autoCompleteRef.current.addListener("place_changed", async function () {
-        const place = await autoCompleteRef.current.getPlace();
-        setFormData(
-          produce(form_data, (draft) => {
-            draft["sell_address"] = place;
-          })
-        );
-        setNewAddress(true);
-        // setTimeout(() => {
-
-        processPlaceSelection();
-        // }, 1000);
-        // processPlaceSelection(place);
-        // false && console.log(results);
-        // getLatLng(results[0])
-        // })
-      });
-    }
-  }, [google_api_loaded]);
+ 
 
   return (
     <div className={styles["main-component"]}>
