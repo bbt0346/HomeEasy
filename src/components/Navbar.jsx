@@ -81,7 +81,7 @@ const Navbar = () => {
       visible: false,
     },
     {
-      title: "Mortgage",
+      title: "Mortgages",
       links: [
         {
           title: "Today's rates",
@@ -90,12 +90,12 @@ const Navbar = () => {
         },
         {
           title: "Home loans",
-          link: "mortgage",
+          link: "/mortgage",
           gtag: "menu_mtg_home_loans",
         },
         {
           title: "Refinance",
-          link: "mortgage",
+          link: "/mortgage",
           gtag: "menu_mtg_refi",
         },
       ],
