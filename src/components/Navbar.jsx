@@ -81,7 +81,7 @@ const Navbar = () => {
       visible: false,
     },
     {
-      title: "Mortgages",
+      title: "Mortgage",
       links: [
         {
           title: "Today's rates",
