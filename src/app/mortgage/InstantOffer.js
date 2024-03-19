@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import useWindowSize from "@/hooks/useWindowSize";
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../../../node_modules/bootstrap/dist/js/bootstrap.min.js';
-
+import IconPopover from "@/components/fluid/IconPopover";
 import styles from './InstantOffer.module.scss';
 import ArrowButton from '@/components/ArrowButton';
 import useGoogleTagManager from "@/hooks/useGoogleTagManager";
@@ -82,6 +82,14 @@ const InstantOffer = ({}) => {
     <div style={{position:'absolute',left:'4px',bottom:'8px'}}>$</div>
   </div>
     </div>
+    <div className="col-12">
+    <div className={`${styles['hover_icon1']} d-flex`} >
+                    <IconPopover
+                 text="The national average listing fee is 5.37%. This would be $21,480 on a $400,000 home."
+                 
+                   /> <span className="ms-2 mt-1" style={{fontSize:'14px'}}>*1.5% of a $400,000 loan</span>
+                    </div> 
+    </div>
  </div>
 
 </form>
@@ -92,7 +100,9 @@ const InstantOffer = ({}) => {
 
       {/* <!-- Modal footer --> */}
       <div class="modal-footer border-0 justify-content-center">
-        <button type="button" style={{backgroundColor:'#D30200',padding:' 0.520833333vw 1.145833333vw',fontSize:' 0.833333333vw;',border:'none',color:'white',borderRadius:'5px'}} data-bs-dismiss="modal">Get pre-approved &rarr;</button>
+        <a 
+        href="https://www.gethomeeasy.com"
+        style={{backgroundColor:'#D30200',padding:' 0.520833333vw 1.145833333vw',fontSize:' 0.833333333vw;',border:'none',color:'white',borderRadius:'5px',textDecoration:'none'}} >Get pre-approved &rarr;</a>
       </div>
 
     </div>

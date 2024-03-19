@@ -7,6 +7,13 @@ import useWindowSize from "@/hooks/useWindowSize";
 import useGoogleTagManager from "@/hooks/useGoogleTagManager";
 
 const Navbar = () => {
+  // Get the current URL
+  const currentURL = window.location.pathname;
+
+  // Check if the URL contains '/morgage'
+  const isErrorPage = currentURL.includes('/mortgage');
+
+
   const router = useRouter();
   const [dataLayer, doEventClick, gtmPush] = useGoogleTagManager();
 
@@ -32,7 +39,8 @@ const Navbar = () => {
    
         {
           title: "See how much you save",
-          link: "/calculator_savings",
+          // link: "/calculator_savings",
+          link: "/calculators",
           gtag: "how_much_save",
         },
       ],
@@ -74,7 +82,8 @@ const Navbar = () => {
         },
         {
           title: "See how much you save",
-          link: "/calculator_savings",
+          // link: "/calculator_savings",
+          link: "/calculators",
           gtag: "sellbuy_how_much_save",
         },
       ],
@@ -235,10 +244,19 @@ const Navbar = () => {
               onClick={() => router.push("/")}
             >
               {" "}
-              <img
+                 {isErrorPage ?  <img
+                src="/img/morgage-logo.png"
+                alt="Home Easy Homes"
+                style={{width:'220px',height:'auto'}}
+              /> :  <img
                 src="/img/home_easy_homes_logo.svg"
                 alt="Home Easy Homes"
-              />{" "}
+              />}
+              {/* <img
+                src="/img/home_easy_homes_logo.svg"
+                alt="Home Easy Homes"
+              /> */}
+              {" "}
             </div>
           </div>
 
