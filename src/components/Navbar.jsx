@@ -21,7 +21,6 @@ const Navbar = () => {
   const [navColor, setNavColor] = useState("");
   const [showMenu, setShowMenu] = useState(false);
   const [showIDXMenu, setShowIDXMenu] = useState(false);
-
   const [menuLinks, setMenuLinks] = useState([
     {
       title: "Sell",
@@ -155,7 +154,7 @@ const Navbar = () => {
         {
           title: "Estimated monthly payments",
           // link: "/calculator_monthly_payments",
-          link: "/calculator",
+          link: "/calculators",
           gtag: "menu_calc_est_mnt_pmts",
         },
       ],
