@@ -4,8 +4,8 @@ import { useRouter } from "next/navigation";
 // import { useEffect } from "react";
 // import useFlowGetStartedStore from "@/store/store.js";
 import useWindowSize from "@/hooks/useWindowSize";
-import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import '../../../node_modules/bootstrap/dist/js/bootstrap.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import IconPopover from "@/components/fluid/IconPopover";
 import styles from './InstantOffer.module.scss';
 import ArrowButton from '@/components/ArrowButton';
@@ -22,7 +22,7 @@ const InstantOffer = ({}) => {
 
                     <div className={`${styles['main-copy-supertitle']}`}>How it works: HomeEasy Mortgage</div>
 
-                    <div className={`${styles['main-copy-title']}`}>We offer up to $10,000<sub>1</sub> towards closing costs, making us your wallet’s new BFF.</div>
+                    <div className={`${styles['main-copy-title']}`}>We offer up to $10,000<sup>1</sup> towards closing costs, making us your wallet’s new BFF.</div>
 
                     <div className={`${styles['main-copy-copy']}`}>See just how low our rates really are. Get instant access to our low rates. Lock in. Save thousands. Get home, easy.</div>
 

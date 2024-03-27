@@ -25,10 +25,10 @@
         padding: 0vw 10vw 12.26666667vw 10vw;
         padding-top: 4.3vw;    
     }
-    // @media (min-width: 1024px) and (max-width: 1279px) {
-    //     grid-template-columns: 1fr 1.1439907fr;
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        grid-template-columns: 1fr 1.1439907fr;
         
-    // }
+    }
     @media  (min-width: 1919px) {
         grid-template-columns: min(583.56px, 45.590625vw) min(496px, 38.75vw) ;
     }

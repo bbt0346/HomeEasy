@@ -297,7 +297,7 @@ useEffect(() => {
                 Not sure what you could get for your home?
                 </div> 
                 <div className={`${styles["main-calculator-info-link-link"]}`}>
-                  <a target="_blank" href="https://401homevalues.areahomevalues.net/">Get a Free Estimate from us</a>
+                  <a target="_blank" href="https://homeeasyhomes.areahomevalues.net/">Get a Free Estimate from us</a>
                 </div>     
               </div>
               }

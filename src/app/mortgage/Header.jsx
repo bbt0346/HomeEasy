@@ -73,7 +73,7 @@ const Header = () => {
             Finance your new home the <span>easy way.</span>
           </div>
           <div className={styles["header-content-copy"]}>
-            Receive upto $10,000<sup>1</sup> towards your closing costs - we&apos;ve got your back!
+            Receive up to $10,000<sup>1</sup> towards your closing costs - we&apos;ve got your back!
           </div>
           
           <div className={`${styles['main-copy-footer']} arrow`}>
