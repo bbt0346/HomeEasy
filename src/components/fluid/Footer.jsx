@@ -158,7 +158,7 @@ const Footer = ({centered_style}) => {
                                         <div className={styles["upper-footer-content-left-links-title"]}>Sell</div>
                                         <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_sell_req_io", ()=>{router.push(`/instantoffer`);}]);}}>Request an InstantOffer</a> </div>
                                         <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_sell_how_works", ()=>{router.push(`/sell`);}]);}}>How it works</a> </div>
-                                        <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_sell_pricing", ()=>{router.push(`/calculator_savings`);}]);}}>Pricing</a> </div>
+                                        <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_sell_pricing", ()=>{router.push(`/calculators`);}]);}}>Pricing</a> </div>
                                     </div>
                                     <div className={styles["upper-footer-content-left-links-item"]}>
                                         <div className={styles["upper-footer-content-left-links-title"]}>Buy</div>
@@ -168,7 +168,7 @@ const Footer = ({centered_style}) => {
                                         <div className={styles["upper-footer-content-left-links-title"]}>Sell &amp; Buy</div>
                                         <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_buy_sell_how_works", ()=>{router.push(`/buyandsell`);}]);}}>How it works</a> </div>
                                         <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_buy_sell_req_io", ()=>{router.push(`/instantoffer`);}]);}}>Request an InstantOffer</a> </div>
-                                        <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_buy_sell_pricing", ()=>{router.push(`/calculator_savings`);}]);}}>Pricing</a> </div>
+                                        <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_buy_sell_pricing", ()=>{router.push(`/calculators`);}]);}}>Pricing</a> </div>
                                         <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_buy_sell_brows_homes", ()=>{router.push(`https://homeeasyhomes.idxbroker.com/idx/results/listings?pt=sfr&idxStatus=active&ccz=city&lp=100000&srt=newest&city%5B%5D=37986`);}]);}}>Browse homes</a> </div>
                                     </div>
 {/* 
@@ -208,9 +208,9 @@ const Footer = ({centered_style}) => {
                                 <div className={styles["upper-footer-content-left-links"]}>
                                     <div className={styles["upper-footer-content-left-links-item"]}>
                                         <div className={styles["upper-footer-content-left-links-title"]}>Calculators</div>
-                                        <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_calc_net_proceeds", ()=>{router.push(`/calculator_proceeds`);}]);}}>Net proceeds</a> </div>
-                                        <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_calc_he_savings", ()=>{router.push(`/calculator_savings`);}]);}}>HomeEasy savings</a> </div>
-                                        <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_calc_est_mnt_pmts", ()=>{router.push(`/calculator_monthly_payments`);}]);}}>Est. monthly payments</a> </div>
+                                        <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_calc_net_proceeds", ()=>{router.push(`/calculators`);}]);}}>Net proceeds</a> </div>
+                                        <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_calc_he_savings", ()=>{router.push(`/calculators`);}]);}}>HomeEasy savings</a> </div>
+                                        <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_calc_est_mnt_pmts", ()=>{router.push(`/calculators`);}]);}}>Est. monthly payments</a> </div>
                                     </div>
         
                                     <div className={styles["upper-footer-content-left-links-item"]}>

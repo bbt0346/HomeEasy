@@ -202,7 +202,7 @@ const Footer = ({ centered_style }) => {
                                                         "callback",
                                                         "foot_1_sell_pricing",
                                                         () => {
-                                                            router.push(`/calculator_savings`);
+                                                            router.push(`/calculators`);
                                                         },
                                                     ]);
                                                 }}
@@ -280,7 +280,7 @@ const Footer = ({ centered_style }) => {
                                                         "callback",
                                                         "foot_1_buy_sell_pricing",
                                                         () => {
-                                                            router.push(`/calculator_savings`);
+                                                            router.push(`/calculators`);
                                                         },
                                                     ]);
                                                 }}
@@ -445,7 +445,7 @@ const Footer = ({ centered_style }) => {
                                                             "callback",
                                                             "foot_1_calc_net_proceeds",
                                                             () => {
-                                                                router.push(`/calculator_proceeds`);
+                                                                router.push(`/calculators`);
                                                             },
                                                         ]);
                                                     }}
@@ -463,7 +463,7 @@ const Footer = ({ centered_style }) => {
                                                             "callback",
                                                             "foot_1_calc_he_savings",
                                                             () => {
-                                                                router.push(`/calculator_savings`);
+                                                                router.push(`/calculators`);
                                                             },
                                                         ]);
                                                     }}
@@ -481,7 +481,7 @@ const Footer = ({ centered_style }) => {
                                                             "callback",
                                                             "foot_1_calc_est_mnt_pmts",
                                                             () => {
-                                                                router.push(`/calculator_monthly_payments`);
+                                                                router.push(`/calculators`);
                                                             },
                                                         ]);
                                                     }}
