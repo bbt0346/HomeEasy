@@ -265,7 +265,7 @@ const Advantage = () => {
                         styles["advantage-content-callout-item-popover"]
                       }
                     >
-                       Our listing fee is just 1%<sup>2</sup> helping our average seller cuts costs by 50% on commissions and fees. Get the same full-service experience for thousands less!
+                       Our listing fee is just 1%<sup>2</sup> helping our average seller cut costs by 50% on commissions and fees. Get the same full-service experience for thousands less!
                     </div>
                   </div>
                 </div>
