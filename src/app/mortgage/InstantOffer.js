@@ -22,7 +22,7 @@ const InstantOffer = ({}) => {
 
                     <div className={`${styles['main-copy-supertitle']}`}>How it works: HomeEasy Mortgage</div>
 
-                    <div className={`${styles['main-copy-title']}`}>We offer up to $10,000<sup>1</sup> towards closing costs, making us your wallet’s new BFF.</div>
+                    <div className={`${styles['main-copy-title']}`}>We offer up to $10,000<sup className={`${styles['one-sup']}`} >1</sup> towards closing costs, making us your wallet’s new BFF.</div>
 
                     <div className={`${styles['main-copy-copy']}`}>See just how low our rates really are. Get instant access to our low rates. Lock in. Save thousands. Get home, easy.</div>
 
@@ -70,16 +70,16 @@ const InstantOffer = ({}) => {
  <div className="row">
     <div className="col-lg-5 col-12">
     <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Down Payemnt %</label>
-    <input type="text" style={{border:'none',borderBottom:'2px solid gray',borderRadius:'0',fontSize:'20px',fontWeight:'900',padding:'0.375rem 0.75rem',width:'100%'}} value="$20"  id="exampleInputEmail1" aria-describedby="emailHelp" />
-    <div style={{position:'absolute',right:'0',bottom:'8px'}}>%</div>
+    <label for="exampleInputEmail1" class="form-label">Down Payment %</label>
+    <input type="text" style={{border:'none',borderBottom:'2px solid gray',borderRadius:'0',fontSize:'20px',fontWeight:'900',padding:'0.375rem 0.75rem',width:'100%'}} value="20"  id="exampleInputEmail1" aria-describedby="emailHelp" />
+    <div style={{position:'absolute',right:'0',bottom:'10px'}}>%</div>
   </div>
     </div>
     <div className="col-lg-7 col-12">
     <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Down Payemnt</label>
-    <input type="text" style={{border:'none',borderBottom:'2px solid gray',borderRadius:'0',fontSize:'20px',fontWeight:'900',padding:'0.375rem 0.75rem',width:'100%',paddingLeft:'35px'}} value="$100,000"  id="exampleInputEmail1" aria-describedby="emailHelp" />
-    <div style={{position:'absolute',left:'4px',bottom:'8px'}}>$</div>
+    <input type="text" style={{border:'none',borderBottom:'2px solid gray',borderRadius:'0',fontSize:'20px',fontWeight:'900',padding:'0.375rem 0.75rem',width:'100%',paddingLeft:'35px'}} value="100,000"  id="exampleInputEmail1" aria-describedby="emailHelp" />
+    <div style={{position:'absolute',left:'4px',bottom:'10px'}}>$</div>
   </div>
     </div>
     <div className="col-12">

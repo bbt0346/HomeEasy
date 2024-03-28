@@ -107,11 +107,11 @@ const Questions = () => {
             copy: "Congrats! You found a home you love! We will start the process by matching you with a top local real estate expert who is there to guide you every step of the way, ensuring your homebuying journey is smooth, successful, and tailored to your unique needs.  From there, your agent will reach out and review your offer and answer any questions you may have.  They can also refer you to one of our mortgage experts to get you pre-approved and increase your buying power.  Once you and your agent come up with an offer you are comfortable with, you&apos;ll be able to sign and submit it digitally.<br/><br/>If your offer is accepted, your agent will draft a purchase agreement for both parties to sign.  Once the T&apos;s are crossed and the I&apos;s are dotted, you are officially in escrow.<br/><br/>If your offer is not accepted, we know it can be heartbreaking, but your agent will remain by your side and there to land the next one!",
             visible: false,
         },
-        {
-            title: "Are there any fees associated with buying a home with HomeEasy Homes?",
-            copy: "As a buyer, we typically charge a fee of 1% of the purchase price, or $5,000, whichever ends up being greater. Also, don't forget about the usual expenses that come with buying a home, such as the down payment, inspection fee, appraisal fee, and closing costs. We're here to help guide you through it all!",
-            visible: false,
-        },
+        // {
+        //     title: "Are there any fees associated with buying a home with HomeEasy Homes?",
+        //     copy: "As a buyer, we typically charge a fee of 1% of the purchase price, or $5,000, whichever ends up being greater. Also, don't forget about the usual expenses that come with buying a home, such as the down payment, inspection fee, appraisal fee, and closing costs. We're here to help guide you through it all!",
+        //     visible: false,
+        // },
         {
             title: "I have to sell my house before I buy.  Can HomeEasy Homes help with that?",
             copy: "Absolutely! We&apos;re all about helping you save some serious cash when you take advantage of bundling our services.  We&apos;ve got your back.  We can even assist you with securing a loan for your next dream home.<br/><br/>Talk with your agent for more details about the best ways to bundle our services and to see how much you can save selling and buying with HomeEasy Homes.",

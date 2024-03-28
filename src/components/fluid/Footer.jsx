@@ -220,8 +220,8 @@ const Footer = ({centered_style}) => {
                                     </div>
                                     <div className={styles["upper-footer-content-left-links-item"]}>
                                         <div className={styles["upper-footer-content-left-links-title"]}>Get the HomeEasy App</div>
-                                        <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_agents_partner", ()=>{router.push(`https://play.google.com/store/apps/details?id=com.simplenexus.loans.client.s__111612`);}]);}}><img src="/img/google (1).png" alt="google" /></a> </div>
-                                        <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_agents_partner", ()=>{router.push(`https://apps.apple.com/us/app/homeeasymortgage/id1543249109`);}]);}}><img src="/img/google (2).png" alt="apple" /></a> </div>
+                                        <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red1' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_agents_partner", ()=>{router.push(`https://play.google.com/store/apps/details?id=com.simplenexus.loans.client.s__111612`);}]);}}><img src="/img/google (1).png" alt="google" /></a> </div>
+                                        <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red1' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_agents_partner", ()=>{router.push(`https://apps.apple.com/us/app/homeeasymortgage/id1543249109`);}]);}}><img src="/img/google (2).png" alt="apple" /></a> </div>
                                     </div>
                                 </div>
                             </div>
