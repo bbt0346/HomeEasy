@@ -1,5 +1,6 @@
 "use client"
 // import { useRouter } from "next/navigation";
+import React, { useState } from 'react';
 import { useRouter } from "next/navigation";
 // import { useEffect } from "react";
 // import useFlowGetStartedStore from "@/store/store.js";
@@ -12,6 +13,51 @@ import ArrowButton from '@/components/ArrowButton';
 import useGoogleTagManager from "@/hooks/useGoogleTagManager";
 
 const InstantOffer = ({}) => {
+// calculation
+const [price, setPrice] = useState("500,000");
+const [downPercent, setDownPercent] = useState("20");
+const [downPrice, setDownPrice] = useState("100,000");
+const [remainingAmount, setRemainingAmount] = useState("0");
+const [onePointFivePercent, setOnePointFivePercent] = useState("6,000");
+
+const handlePriceChange = (e) => {
+  const newPrice = e.target.value.replace(/,/g, ''); // Remove commas before parsing
+  setPrice(formatNumber(newPrice));
+  const newDownPercent = Math.min(((downPrice / newPrice) * 100).toFixed(2), 100); // Ensure downPercent does not exceed 100
+  setDownPrice("0"); // Reset downPrice to 0
+  setDownPercent("0"); // Reset downPercent to 0
+  calculateRemainingAmount(newPrice);
+};
+
+const handleDownPriceChange = (e) => {
+  const newDownPrice = e.target.value.replace(/,/g, ''); // Remove commas before parsing
+  const parsedPrice = parseFloat(price.replace(/,/g, '')); // Remove commas from price before parsing
+  const limitedDownPrice = Math.min(newDownPrice, parsedPrice); // Ensure downPrice does not exceed price
+  setDownPrice(formatNumber(limitedDownPrice));
+  const newDownPercent = Math.min(((limitedDownPrice / parsedPrice) * 100).toFixed(2), 100); // Recalculate downPercent based on the updated downPrice
+  setDownPercent(newDownPercent);
+  calculateRemainingAmount(parsedPrice - limitedDownPrice);
+};
+
+const handleDownPercentChange = (e) => {
+  const newDownPercent = Math.min(e.target.value, 100); // Ensure downPercent does not exceed 100
+  setDownPercent(newDownPercent);
+  const parsedPrice = parseFloat(price.replace(/,/g, '')); // Remove commas from price before parsing
+  const newDownPrice = Math.min(((newDownPercent / 100) * parsedPrice).toFixed(0), parsedPrice); // Ensure downPrice does not exceed price
+  setDownPrice(formatNumber(newDownPrice));
+  calculateRemainingAmount(parsedPrice - newDownPrice);
+};
+
+const calculateRemainingAmount = (amount) => {
+  setRemainingAmount(formatNumber(amount));
+  const onePointFivePercentValue = (amount * 0.015).toFixed(0);
+  setOnePointFivePercent(formatNumber(onePointFivePercentValue));
+};
+
+const formatNumber = (number) => {
+  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+};
+
  const router = useRouter();
     const [dataLayer, doEventClick, gtmPush] = useGoogleTagManager();
     const size = useWindowSize();
@@ -55,48 +101,49 @@ const InstantOffer = ({}) => {
       </div>
 
       {/* <!-- Modal body --> */}
-      <div class="modal-body">
-        <h3 className="text-bold text-center">Calculate your closing credits</h3>
-        <div style={{background:'#F5F7F9',width:'90%',margin: 'auto',padding:'18px 0'}} >
-           <div className="text-center" style={{fontSize:'16px',fontWeight:'700',color:'#1D1D1D'}}>YOUR ESTIMATED CLOSING CREDIT</div>
-            <div className="text-center" style={{fontWeight:'900',fontSize:'26px'}}>$6,000*</div>
-        </div>
-        <div className="calculator" style={{paddingTop:'35px',width:'90%',margin:'auto'}}>
-        <form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Home Purchase Price</label>
-    <input type="text" style={{border:'none',borderBottom:'2px solid gray',borderRadius:'0',fontSize:'20px',fontWeight:'900',padding:'0.375rem 0.75rem',width:'100%'}} value="$500,000"  id="exampleInputEmail1" aria-describedby="emailHelp" />
-  </div>
- <div className="row">
-    <div className="col-lg-5 col-12">
-    <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Down Payment %</label>
-    <input type="text" style={{border:'none',borderBottom:'2px solid gray',borderRadius:'0',fontSize:'20px',fontWeight:'900',padding:'0.375rem 0.75rem',width:'100%'}} value="20"  id="exampleInputEmail1" aria-describedby="emailHelp" />
-    <div style={{position:'absolute',right:'0',bottom:'10px'}}>%</div>
-  </div>
-    </div>
-    <div className="col-lg-7 col-12">
-    <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Down Payemnt</label>
-    <input type="text" style={{border:'none',borderBottom:'2px solid gray',borderRadius:'0',fontSize:'20px',fontWeight:'900',padding:'0.375rem 0.75rem',width:'100%',paddingLeft:'35px'}} value="100,000"  id="exampleInputEmail1" aria-describedby="emailHelp" />
-    <div style={{position:'absolute',left:'4px',bottom:'10px'}}>$</div>
-  </div>
-    </div>
-    <div className="col-12">
-    <div className={`${styles['hover_icon1']} d-flex`} >
-                    <IconPopover
-                 text="The national average listing fee is 5.37%. This would be $21,480 on a $400,000 home."
-                 
-                   /> <span className="ms-2 mt-1" style={{fontSize:'14px'}}>*1.5% of a $400,000 loan</span>
-                    </div> 
-    </div>
- </div>
-
-</form>
-        </div>
-        {/* Modal body.. */}
-
+      <div className="modal-body">
+      <h3 className="text-bold text-center">Calculate your closing credits</h3>
+      <div style={{ background: '#F5F7F9', width: '90%', margin: 'auto', padding: '18px 0' }}>
+        <div className="text-center" style={{ fontSize: '16px', fontWeight: '700', color: '#1D1D1D' }}>YOUR ESTIMATED CLOSING CREDIT</div>
+        <div className="text-center" style={{ fontWeight: '900', fontSize: '26px' }}>$<span>{onePointFivePercent}</span>*</div>
       </div>
+      <div className="calculator" style={{ paddingTop: '35px', width: '90%', margin: 'auto' }}>
+        <form>
+          <div className="mb-3">
+            <label htmlFor="price" className="form-label">Home Purchase Price</label>
+            <input type="text" name="price" style={{ border: 'none', borderBottom: '2px solid gray', borderRadius: '0', fontSize: '20px', fontWeight: '900', padding: '0.375rem 1.75rem', width: '100%' }} value={price} onChange={handlePriceChange} id="price" aria-describedby="emailHelp" />
+            <div style={{ position: 'absolute', left: '4px', bottom: '10px' }}>$</div>
+          </div>
+          <div className="row">
+            <div className="col-lg-5 col-12">
+              <div className="mb-3">
+                <label htmlFor="downPercent" className="form-label">Down Payment %</label>
+                <input type="text" name="down_percent" style={{ border: 'none', borderBottom: '2px solid gray', borderRadius: '0', fontSize: '20px', fontWeight: '900', padding: '0.375rem 0.5rem', width: '100%' }} value={downPercent} onChange={handleDownPercentChange} id="downPercent" aria-describedby="emailHelp" />
+                <div style={{ position: 'absolute', right: '0', bottom: '10px' }}>%</div>
+              </div>
+            </div>
+            <div className="col-lg-7 col-12">
+              <div className="mb-3">
+                <label htmlFor="downPrice" className="form-label">Down Payment</label>
+                <input type="text" name="down_price" style={{ border: 'none', borderBottom: '2px solid gray', borderRadius: '0', fontSize: '20px', fontWeight: '900', padding: '0.375rem 1.75rem', width: '100%' }} value={downPrice} onChange={handleDownPriceChange} id="downPrice" aria-describedby="emailHelp" />
+                <div style={{ position: 'absolute', left: '4px', bottom: '10px' }}>$</div>
+              </div>
+            </div>
+            <div className="col-12">
+              <div className="d-flex">
+                <span className="me-2 mt-1">*1.5% of your loan amount</span>
+              </div> 
+              <div className='loan'>
+
+              </div>
+              <div className='estimated'>
+
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
 
       {/* <!-- Modal footer --> */}
       <div class="modal-footer border-0 justify-content-center">
