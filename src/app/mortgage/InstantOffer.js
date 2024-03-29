@@ -49,7 +49,13 @@ const handleDownPercentChange = (e) => {
 const calculateRemainingAmount = (amount) => {
   setRemainingAmount(formatNumber(amount));
   const onePointFivePercentValue = (amount * 0.015).toFixed(0);
-  setOnePointFivePercent(formatNumber(onePointFivePercentValue));
+  if(onePointFivePercentValue>=10000){
+    setOnePointFivePercent("10,000")
+  }
+  else{
+    setOnePointFivePercent(formatNumber(onePointFivePercentValue));
+  }
+ 
 };
 
 const formatNumber = (number) => {
