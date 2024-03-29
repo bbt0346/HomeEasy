@@ -19,9 +19,8 @@ const [downPercent, setDownPercent] = useState("20");
 const [downPrice, setDownPrice] = useState("100,000");
 const [remainingAmount, setRemainingAmount] = useState("0");
 const [onePointFivePercent, setOnePointFivePercent] = useState("6,000");
-
 const handlePriceChange = (e) => {
-  const newPrice = e.target.value.replace(/,/g, ''); // Remove commas before parsing
+  const newPrice = e.target.value.replace(/\D/g, ''); // Remove non-numeric characters
   setPrice(formatNumber(newPrice));
   const newDownPercent = Math.min(((downPrice / newPrice) * 100).toFixed(2), 100); // Ensure downPercent does not exceed 100
   setDownPrice("0"); // Reset downPrice to 0
@@ -30,8 +29,8 @@ const handlePriceChange = (e) => {
 };
 
 const handleDownPriceChange = (e) => {
-  const newDownPrice = e.target.value.replace(/,/g, ''); // Remove commas before parsing
-  const parsedPrice = parseFloat(price.replace(/,/g, '')); // Remove commas from price before parsing
+  const newDownPrice = e.target.value.replace(/\D/g, ''); // Remove non-numeric characters
+  const parsedPrice = parseFloat(price.replace(/\D/g, '')); // Remove non-numeric characters from price before parsing
   const limitedDownPrice = Math.min(newDownPrice, parsedPrice); // Ensure downPrice does not exceed price
   setDownPrice(formatNumber(limitedDownPrice));
   const newDownPercent = Math.min(((limitedDownPrice / parsedPrice) * 100).toFixed(2), 100); // Recalculate downPercent based on the updated downPrice
@@ -40,14 +39,13 @@ const handleDownPriceChange = (e) => {
 };
 
 const handleDownPercentChange = (e) => {
-  const newDownPercent = Math.min(e.target.value, 100); // Ensure downPercent does not exceed 100
+  const newDownPercent = Math.min(e.target.value.replace(/\D/g, ''), 100); // Ensure downPercent does not exceed 100 and remove non-numeric characters
   setDownPercent(newDownPercent);
-  const parsedPrice = parseFloat(price.replace(/,/g, '')); // Remove commas from price before parsing
+  const parsedPrice = parseFloat(price.replace(/\D/g, '')); // Remove non-numeric characters from price before parsing
   const newDownPrice = Math.min(((newDownPercent / 100) * parsedPrice).toFixed(0), parsedPrice); // Ensure downPrice does not exceed price
   setDownPrice(formatNumber(newDownPrice));
   calculateRemainingAmount(parsedPrice - newDownPrice);
 };
-
 const calculateRemainingAmount = (amount) => {
   setRemainingAmount(formatNumber(amount));
   const onePointFivePercentValue = (amount * 0.015).toFixed(0);
