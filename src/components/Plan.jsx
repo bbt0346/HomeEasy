@@ -28,7 +28,7 @@ const Plan = () => {
                         whileInView={{ opacity: 1 }}
                         transition={{ ease: "easeOut", duration: 2, delay: 0 }}            
                         viewport={{ once: true }}
-                        className={styles['main-component-card']}> <a onClick={()=>{gtmPush(["callback", "home_plan_card_1", ()=>{router.push(`/calculators`);}]);}} >
+                        className={styles['main-component-card']}> <a onClick={()=>{gtmPush(["callback", "home_plan_card_1", ()=>{router.push(`/calculator-1`);}]);}} >
                              <img src="/img/card1.png" alt="How much can I make" />
                                
                         
@@ -36,7 +36,7 @@ const Plan = () => {
               <ArrowButton
                 link_text="Get started"
                 callback={() => {
-                    gtmPush(["callback", "home_plan_card_1", ()=>{router.push(`/calculators`);}]);
+                    gtmPush(["callback", "home_plan_card_1", ()=>{router.push(`/calculator-1`);}]);
                 }}
                 large_text={true}
               />
@@ -46,12 +46,12 @@ const Plan = () => {
                         whileInView={{ opacity: 1 }}
                         transition={{ ease: "easeOut", duration: 2, delay: 0.4 }}            
                         viewport={{ once: true }}
-                        className={styles['main-component-card']}> <a onClick={()=>{gtmPush(["callback", "home_plan_card_2", ()=>{router.push(`/calculators`);}]);}} > <img src="/img/card2.png" alt="Savings calculator" /> </a>
+                        className={styles['main-component-card']}> <a onClick={()=>{gtmPush(["callback", "home_plan_card_2", ()=>{router.push(`/calculator-2`);}]);}} > <img src="/img/card2.png" alt="Savings calculator" /> </a>
                         <div className={styles["advantage-content-item-get-started-link"]}>
               <ArrowButton
                 link_text="Get started"
                 callback={() => {
-                    gtmPush(["callback", "home_plan_card_2", ()=>{router.push(`/calculators`);}]);
+                    gtmPush(["callback", "home_plan_card_2", ()=>{router.push(`/calculator-2`);}]);
                 }}
                 large_text={true}
               />
@@ -62,12 +62,12 @@ const Plan = () => {
                         whileInView={{ opacity: 1 }}
                         transition={{ ease: "easeOut", duration: 2, delay: 0.8 }}            
                         viewport={{ once: true }}
-                        className={styles['main-component-card']}> <a onClick={()=>{gtmPush(["callback", "home_plan_card_3", ()=>{router.push(`/calculators`);}]);}} > <img src="/img/card3.png" alt="Payments calculator" /> </a>
+                        className={styles['main-component-card']}> <a onClick={()=>{gtmPush(["callback", "home_plan_card_3", ()=>{router.push(`/calculator-3`);}]);}} > <img src="/img/card3.png" alt="Payments calculator" /> </a>
                         <div className={styles["advantage-content-item-get-started-link"]}>
               <ArrowButton
                 link_text="Get started"
                 callback={() => {
-                    gtmPush(["callback", "home_plan_card_3", ()=>{router.push(`/calculators`);}]);
+                    gtmPush(["callback", "home_plan_card_3", ()=>{router.push(`/calculator-3`);}]);
                 }}
                 large_text={true}
               />

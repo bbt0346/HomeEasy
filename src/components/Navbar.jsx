@@ -39,7 +39,7 @@ const Navbar = () => {
         {
           title: "See how much you save",
           // link: "/calculator_savings",
-          link: "/calculators",
+          link: "/calculator-2",
           gtag: "how_much_save",
         },
       ],
@@ -82,7 +82,7 @@ const Navbar = () => {
         {
           title: "See how much you save",
           // link: "/calculator_savings",
-          link: "/calculators",
+          link: "/calculator-2",
           gtag: "sellbuy_how_much_save",
         },
       ],
@@ -142,19 +142,19 @@ const Navbar = () => {
         {
           title: "Net proceeds",
           // link: "/calculator_proceeds",
-          link: "/calculators",
+          link: "/calculator-2",
           gtag: "menu_calc_net_proceeds",
         },
         {
           title: "HomeEasy savings",
           // link: "/calculator_savings",
-          link: "/calculators",
+          link: "/calculator-2",
           gtag: "menu_calc_he_savings",
         },
         {
           title: "Estimated monthly payments",
           // link: "/calculator_monthly_payments",
-          link: "/calculators",
+          link: "/calculator-3",
           gtag: "menu_calc_est_mnt_pmts",
         },
       ],
