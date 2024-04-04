@@ -32,7 +32,7 @@ const Questions = ({question_title, question_copy, question_questions, question_
         },
         {
             title: "Can I sell or buy with HomeEasy homes if I am already working with an agent?",
-            copy: "As a buyer yes, but as an industry standard, we will ask you to sign an exclusive agreement if you decide to list with us.",
+            copy: "As a buyer, yes, but as an industry standard, we will ask you to sign an exclusive agreement if you decide to list with us.",
             visible: false,
         },
     ]);

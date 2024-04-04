@@ -22,7 +22,7 @@ const Questions = () => {
     const questions0 = [
         {
             title: "This sounds too good to be true.  What&apos;s the catch here?",
-            copy: "You know we get that a lot.  But the truth is it&apos;s not too good to be true, it&apos;s just the way things should be.  By automating parts of the home buying process, our agents are able to work more efficiently for less commission.   And with our long lasting relationships with local attorneys, title companies, escrow companies, and mortgage lenders, you can save thousands more when working with our preferred partners.",
+            copy: "You know, we get that a lot.  But the truth is it&apos;s not too good to be true, it&apos;s just the way things should be.  By automating parts of the home buying process, our agents are able to work more efficiently for less commission.   And with our long lasting relationships with local attorneys, title companies, escrow companies, and mortgage lenders, you can save thousands more when working with our preferred partners.",
             visible: true,
         },
         {
@@ -99,7 +99,7 @@ const Questions = () => {
         },
         {
             title: "How does buying a home from you work?",
-            copy: "Just like buying a home with a traditional broker – just a lot easier.  Everything you need to get started is right here at your fingertips.  Click through homes, 3D floor plans, virtual tours, detailed home descriptions, and location maps.  We even have a built in payment calculators to help you estimate your monthly costs.<br /><br />Found a home that catches your eye? Right from the listing page, you will be instantly matched with one of our friendly local real estate experts.  They&apos;re ready to provide you with the personalized guidance and support you need throughout your homebuying journey.<br /><br />No need to stress or search endlessly – we&apos;ve simplified the process to make it seamless and enjoyable for you.  So go ahead and start searching for your dream home right here, right now.  Your next home is just a click away!",
+            copy: "Just like buying a home with a traditional broker – just a lot easier.  Everything you need to get started is right here at your fingertips.  Click through homes, 3D floor plans, virtual tours, detailed home descriptions, and location maps.  We even have built in payment calculators to help you estimate your monthly costs.<br /><br />Found a home that catches your eye? Right from the listing page, you will be instantly matched with one of our friendly local real estate experts.  They&apos;re ready to provide you with the personalized guidance and support you need throughout your homebuying journey.<br /><br />No need to stress or search endlessly – we&apos;ve simplified the process to make it seamless and enjoyable for you.  So go ahead and start searching for your dream home right here, right now.  Your next home is just a click away!",
             visible: false,
         },
         {

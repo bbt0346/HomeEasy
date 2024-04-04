@@ -215,7 +215,7 @@ const Advantage = () => {
                   <div
                     className={styles["advantage-content-callout-item-title"]}
                   >
-                    Receive an instantOffer
+                    Receive an instant offer
                     <div
                       className={
                         styles["advantage-content-callout-item-popover"]
@@ -238,7 +238,7 @@ const Advantage = () => {
                   <div
                     className={styles["advantage-content-callout-item-title"]}
                   >
-                    List Your home for 1%
+                    List your home for 1%
                     <div
                       className={
                         styles["advantage-content-callout-item-popover"]
@@ -259,7 +259,7 @@ const Advantage = () => {
                   <div
                     className={styles["advantage-content-callout-item-title"]}
                   >
-                    Save Thousands
+                    Save thousands
                     <div
                       className={
                         styles["advantage-content-callout-item-popover"]
