@@ -645,7 +645,7 @@ const Footer = ({ centered_style }) => {
                                                 "callback",
                                                 "foot_2_social_linkedin",
                                                 () => {
-                                                    router.push(`https://www.linkedin.com/company/semper-home-loans`);
+                                                    router.push(` https://www.linkedin.com/company/homeeasyhomes`);
                                                 },
                                             ]);
                                         }}
@@ -778,8 +778,9 @@ const Footer = ({ centered_style }) => {
                         </div>
                         <div className={styles["grand_text2"]}>
                             <div className={styles["grand_text"]}>
-                                2 Save with HomeEasy Homes’ lower 1% listing fee when you buy and sell with a Preferred HomeEasy Homes Agent, versus a more-typical 2.5% listing fee. Fees subject to change,
-                                <a href="/homeeasy_listing" target='_blank'>minimums apply</a> . Buyer’s agent fee not included.
+                            2 Save with HomeEasy Homes’ lower 1% listing fee when you buy and sell with a Preferred HomeEasy Homes Agent, versus a more-typical 2.5% listing fee. Fees subject to change,
+                         <a href="/homeeasy_listing" target='_blank'>minimums apply</a> . Buyer’s agent fee not included. 1% listing agreement is only valid for first 60 days of listing. After 60 days,
+                          the listing will revert to a traditional 2.5% commission.
                             </div>
                             <div className={styles["bottom_text"]}>
                                 <p>Apple and the Apple logo are trademarks of Apple Inc. registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>

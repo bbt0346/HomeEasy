@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import Testamonials from "../components/Testamonials";
+import Testamonials from "../app/about/Testimonials";
 import Advantage from "../components/Advantage";
 import Difference from "../components/Difference";
 import Destress from "../components/Destress";

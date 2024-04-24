@@ -33,7 +33,7 @@ export default function Home() {
       <HowItWorks />
       <Buy />
       <Testimonials />
-      <Accolades />
+      {/* <Accolades /> */}
       <Plan />
       <Questions 
         question_index={1}

@@ -311,7 +311,7 @@ By searching, you agree to the <a href="/tos" target="_blank">Terms of Use</a>, 
                         <div className={styles["lower-footer-content-right"]}>
                             <div className={styles["lower-footer-content-right-social-links"]}>
                                 <div className={styles["lower-footer-content-right-social-links-container"]}>
-                                <a target="_blank" onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_2_social_linkedin", ()=>{router.push(`https://www.linkedin.com/company/semper-home-loans`);}]);}}><svg xmlns="http://www.w3.org/2000/svg"
+                                <a target="_blank" onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_2_social_linkedin", ()=>{router.push(` https://www.linkedin.com/company/homeeasyhomes`);}]);}}><svg xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 448 512">
                                         <path
                                             d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
@@ -389,7 +389,9 @@ By searching, you agree to the <a href="/tos" target="_blank">Terms of Use</a>, 
                         <div className={styles["grand_text2"]}>
                         <div className={styles["grand_text"]}>
                         2 Save with HomeEasy Homes’ lower 1% listing fee when you buy and sell with a Preferred HomeEasy Homes Agent, versus a more-typical 2.5% listing fee. Fees subject to change,
-                         <a href="/homeeasy_listing" target='_blank'>minimums apply</a> . Buyer’s agent fee not included.
+                         <a href="/homeeasy_listing" target='_blank'>minimums apply</a> . Buyer’s agent fee not included. 1% listing agreement is only valid for first 60 days of listing. After 60 days,
+                          the listing will revert to a traditional 2.5% commission.
+
                             </div>
                         <div className={styles["bottom_text"]}>
                         <p>Apple and the Apple logo are trademarks of Apple Inc. registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>

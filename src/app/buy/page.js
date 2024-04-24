@@ -32,7 +32,7 @@ export default function Home() {
       <HowItWorks />
       <Sell />
       <Testimonials />
-      <Accolades />
+      {/* <Accolades /> */}
       {/* <InstantOffer /> */}
       {/* <ListingForOne /> */}
       {/* <HowItWorks /> */}
