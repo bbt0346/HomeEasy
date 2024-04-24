@@ -45,27 +45,47 @@ const Questions = () => {
             copy: "While we don&apos;t require an exclusive agency agreement from buyers, if you choose to list your property with us, it is customary in the industry for us to ask you to sign one.",
             visible: false,
         },
+        {
+            title: "Will I be able to sit down with my Realtor in person?",
+            copy: "Yes of course! Your Realtor is a REAL person who would love to meet you, sit down with you, and go over everything to ensure a smooth transition.",
+            visible: false,
+        },
+        {
+            title: "Will my Realtor handle everything from beginning to end?",
+            copy: "Yes, your Realtor will handle everything from beginning to end and everything in between! This is the same as any other home sale, the only difference is the Realtor is putting more money in your pocket by working for less commission!",
+            visible: false,
+        },
+        {
+            title: "I'm not a tech wiz, is that going to affect me using HomeEasy Homes?",
+            copy: "Absolutely not! Your Realtor is here for you every step of the way! You can relax knowingthat you don’t have to stress about technology or everything being digital. They've got you covered!",
+            visible: false,
+        },
+        {
+            title: "Will I have full control over my transaction?",
+            copy: " No one is going to force you to do anything, however once you sign an offer and P&S there are the standard consequences in dissolving a transaction.",
+            visible: false,
+        },
     ];
 
     const questions1 = [
         {
             title: "What services are included when I sell my home with HomeEasy?",
-            copy: "Listing with us? We handle all the necessary steps to make your home show worthy and ensure you get top dollar.  Our comprehensive services cover everything you need, including listing your home, taking professional photos that truly showcase your home, and even a virtual tour to showcase your property.  We also go the extra mile with extensive marketing efforts, a pre-inspection report, and hosting engaging Open Houses.  Rest assured, we&apos;ve got you covered every step of the way.  And in case you forgot, for only 1% commission.",
+            copy: "Listing with us? We handle all the necessary steps to make your home show worthy and ensure you get top dollar.  Our comprehensive services cover everything you need, including listing your home, taking professional photos that truly showcase your home, and even a virtual tour to showcase your property.  We also go the extra mile with extensive marketing efforts, a pre-inspection report, and hosting engaging Open Houses.  Rest assured, we've got you covered every step of the way.  And in case you forgot, for only 1% commission.",
             visible: true,
         },
         {
             title: "What types of homes do you make cash offers on?",
-            copy: "We can only buy homes within our service areas and if the seller has clear ownership of the property.  Types of homes include single family homes, townhomes, duplexes, and condos.  We consider many factors when making an offer including the home&apos;s materials and overall condition.  The criteria below may impact our ability to make an InstantOffer:<br/><br/>• Your home is being sold as a short sale or foreclosure<br/>• Your home has un-permitted additions<br/>• Significant foundation issues, or was damaged by floods, fire, or other natural disasters<br/>• Your home has dated materials<br/>• Your home has active organic growth",
+            copy: "We can only buy homes within our service areas and if the seller has clear ownership of the property.  Types of homes include single family homes, townhomes, duplexes, and condos.  We consider many factors when making an offer including the home's materials and overall condition.  The criteria below may impact our ability to make an InstantOffer:<br/><br/>• Your home is being sold as a short sale or foreclosure<br/>• Your home has un-permitted additions<br/>• Significant foundation issues, or was damaged by floods, fire, or other natural disasters<br/>• Your home has dated materials<br/>• Your home has active organic growth",
             visible: false,
         },
         {
-            title: "How do you assess my home&apos;s value?",
-            copy: "Our dedicated research team delves into every detail, from your home&apos;s unique features to neighborhood trends and current market dynamics.  We conduct a thorough analysis by comparing your home to similar properties in the area, considering factors like square footage, number of bedrooms, and more.  By examining the selling and pending prices of these comparable homes, as well as assessing the overall market conditions, we gain valuable insights.<br/><br/>Why do we go through this process?  Well, nearby homes provide a reliable benchmark for gauging how much potential buyers may be willing to pay for your property.  Additionally, studying the market as a whole helps us understand the level of demand.   If there&apos;s a shortage of listed homes, it often leads to price increases, ultimately boosting the value of your own home.<br/><br/>Rest assured, we leave no stone unturned when it comes to researching and analyzing the factors that influence the market value of your home.  By staying informed and up-to-date, we can provide you with accurate and reliable information to make the best decisions throughout the selling process.",
+            title: "How do you assess my home's value?",
+            copy: "Our dedicated research team delves into every detail, from your home's unique features to neighborhood trends and current market dynamics.  We conduct a thorough analysis by comparing your home to similar properties in the area, considering factors like square footage, number of bedrooms, and more.  By examining the selling and pending prices of these comparable homes, as well as assessing the overall market conditions, we gain valuable insights.<br/><br/>Why do we go through this process?  Well, nearby homes provide a reliable benchmark for gauging how much potential buyers may be willing to pay for your property.  Additionally, studying the market as a whole helps us understand the level of demand.   If there's a shortage of listed homes, it often leads to price increases, ultimately boosting the value of your own home.<br/><br/>Rest assured, we leave no stone unturned when it comes to researching and analyzing the factors that influence the market value of your home.  By staying informed and up-to-date, we can provide you with accurate and reliable information to make the best decisions throughout the selling process.",
             visible: false,
         },
         {
             title: "How do I request an instant cash offer from HomeEasy Homes?",
-            copy: "If you are looking for a fast, easy, stress-free way of selling your home, all you need to do is request an InstantOffer.  Don&apos;t worry, the process is simple, fast, a completely obligation free.  Just enter in your address and we&apos;ll guide you through a few brief questions about the condition, features, and upgrades of your home.  We genuinely want to understand all the unique aspects that make your home special, and we&apos;ll take these details into account when creating your personalized InstantOffer.",
+            copy: "If you are looking for a fast, easy, stress-free way of selling your home, all you need to do is <a href='/get_started?flow=sell&step=0&branch=9'> request an InstantOffer</a>.  Don't worry, the process is simple, fast, a completely obligation free.  Just enter in your address and we'll guide you through a few brief questions about the condition, features, and upgrades of your home.  We genuinely want to understand all the unique aspects that make your home special, and we'll take these details into account when creating your personalized InstantOffer.",
             visible: false,
         },
         {
@@ -75,7 +95,7 @@ const Questions = () => {
         },
         {
             title: "Does my InstantOffer expire?",
-            copy: "Yes.  Because home values often change based on the market&apos;s activity, our cash offers usually expire within 4 days from the date of the offer.  However, we are happy to provide you with an updated offer.  The updated offer may be unchanged, high, or lower than your previous InstantOffer.",
+            copy: "Yes.  Because home values often change based on the market's activity, our cash offers usually expire within 4 days from the date of the offer.  However, we are happy to provide you with an updated offer.  The updated offer may be unchanged, high, or lower than your previous InstantOffer.",
             visible: false,
         },
         {
@@ -85,12 +105,11 @@ const Questions = () => {
         },
         {
             title: "What costs are involved when I sell my home with HomeEasy Homes?",
-            copy: "As the listing agent, we only charge 1% vs the national average of 5.46% of your home&apos;s final purchase amount for our all-inclusive services. As the seller, you may also be required to pay the buyer’s agent commission.  Additional fees include any local taxes and closing costs associated with the state&apos;s legal requirements.     ",
+            copy: "As the listing agent, we only charge 1% vs the national average of 5.46% of your home's final purchase amount for our all-inclusive services. As the seller, you may also be required to pay the buyer’s agent commission.  Additional fees include any local taxes and closing costs associated with the state's legal requirements.     ",
             visible: false,
         },
-
     ];
-
+    
     const questions2 = [
         {
             title: "What are the perks of buying a home with HomeEasy Homes?",
