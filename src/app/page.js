@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import Testamonials from "../app/about/Testimonials";
+import Testamonials from "../components/Testamonials";
 import Advantage from "../components/Advantage";
 import Difference from "../components/Difference";
 import Destress from "../components/Destress";
@@ -50,10 +50,10 @@ export default function Home() {
       />
       <Plan />
       <GettingStarted />
-      <HomeSearchLinks
+      {/* <HomeSearchLinks
         main_component_style={"main-component-gray"}
         centered_style={"centered-content"}
-      />
+      /> */}
       <Footer centered_style={"centered-content"} />
     </main>
   );

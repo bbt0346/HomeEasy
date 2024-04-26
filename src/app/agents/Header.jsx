@@ -113,7 +113,7 @@ const Header = () => {
                             link_text="Join today!"
                             callback={()=>{
                                 // router.push(`/get_started?flow=sell&step=0&branch=9`);
-                                gtmPush(["callback", "sell_list_one", ()=>{router.push(`/`);}]);
+                                gtmPush(["callback", "sell_list_one", ()=>{router.push(`https://homeeasyhomes.com/get_started?flow=partner&step=1`);}]);
                             }}
                         />
           </div>

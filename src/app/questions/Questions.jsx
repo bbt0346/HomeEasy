@@ -57,12 +57,17 @@ const Questions = () => {
         },
         {
             title: "I'm not a tech wiz, is that going to affect me using HomeEasy Homes?",
-            copy: "Absolutely not! Your Realtor is here for you every step of the way! You can relax knowingthat you don’t have to stress about technology or everything being digital. They've got you covered!",
+            copy: "Absolutely not! Your Realtor is here for you every step of the way! You can relax knowing that you don’t have to stress about technology or everything being digital. They've got you covered!",
             visible: false,
         },
         {
             title: "Will I have full control over my transaction?",
             copy: " No one is going to force you to do anything, however once you sign an offer and P&S there are the standard consequences in dissolving a transaction.",
+            visible: false,
+        },
+        {
+            title: "How long does it normally take to buy/sell a house?",
+            copy: "There are a lot of factors that go into selling a home and getting to the closing table.Once the P&S is signed and the loan starts processing, it should be about 30 days when using our Preferred Lender to process your loan.",
             visible: false,
         },
     ];
@@ -108,6 +113,36 @@ const Questions = () => {
             copy: "As the listing agent, we only charge 1% vs the national average of 5.46% of your home's final purchase amount for our all-inclusive services. As the seller, you may also be required to pay the buyer’s agent commission.  Additional fees include any local taxes and closing costs associated with the state's legal requirements.     ",
             visible: false,
         },
+        {
+            title: "Is there anything I should do to prep my home for selling?",
+            copy: "Let's get you set up with one of our Preferred Agents so they can walk you through what you could do to prep your home to get it in the best shape possible to sell. But don't worry, their suggestions are exactly that... a suggestion, ultimately, it's up to you how much prep you want to do, if any. ",
+            visible: false,
+        },
+        {
+            title: "As a Seller, how long do I have to respond to an offer?",
+            copy: " There is no legal deadline, but the ideal timeline is 24 to 48 hours. ",
+            visible: false,
+        },
+        {
+            title: "What does contingent mean when selling a home?",
+            copy: " Contingent or contingency means the sale of the home is dependent on something, so the buyer has additional conditions before finalizing the sale. For example, a lot of the time a home sale is contingent pending a home inspection and appraisal of a property. Once both of those things come back to the buyer’s liking, they proceed forward with the home sale. ",
+            visible: false,
+        },
+        {
+            title: "How much are closing costs when selling a home?",
+            copy: " It depends which state you're in, it also depends upon many factors like taxes, mortgage payoff, property closing costs, etc. You can use a seller closing cost calculator to get a proper estimate of how much you will need to pay in the real estate transaction. ",
+            visible: false,
+        },
+        {
+            title: "Who is responsible for closing costs when purchasing/selling a home?",
+            copy: "Both the buyer and seller are responsible for their own set of closing costs, which include the origination and underwriting of a mortgage, taxes, insurance, and record filing. But remember some things can be negotiated!",
+            visible: false,
+        },
+        {
+            title: "What Is Fair Market Value?",
+            copy: "Fair market value is what the current state of the housing market is in. Every town, city, and even street is different! It’s important you partner with a Realtor who is going to get the most for your home and give you the most accurate information to make an informed decision on what to sell your home for. You don’t want to over price and you also don’t want to underprice.",
+            visible: false,
+        },
     ];
     
     const questions2 = [
@@ -136,6 +171,42 @@ const Questions = () => {
             copy: "Absolutely! We&apos;re all about helping you save some serious cash when you take advantage of bundling our services.  We&apos;ve got your back.  We can even assist you with securing a loan for your next dream home.<br/><br/>Talk with your agent for more details about the best ways to bundle our services and to see how much you can save selling and buying with HomeEasy Homes.",
             visible: false,
         },
+        {
+            title: "Is there anything I should do before I start the process to purchase a home?",
+            copy: "Yes, get your finances in order. We can link you up with our Preferred Lender so they can start the pre-approval process. This will help you understand where you stand financially, what you can afford today, and what you need to do to get your credit or circumstances in order, so you have real expectations and action items on what to do to get you to where you need to be. A pre-approval is also a great way to strengthen your offer because it shows the seller serious intent, confirms your financial capability, speeds up the homebuying process, and reduces the risk of a deal falling through.",
+            visible: false,
+        },
+        {
+            title: "What is the best way to find out about homes for sale, so I don't miss out on my dream home?",
+            copy: "Let's get you set up with one of our Preferred Agents to get the conversation going on where you are in your buying process. From there they will understand your criteria and what you're looking for and can get you set up on MLS.",
+            visible: false,
+        },
+        {
+            title: "Do I need to have a home inspection?",
+            copy: " Home inspections are for the buyer’s wellbeing, however it is also a tool that is used for leverage when putting in an offer. The seller can sell a property as-is, but a home sale is always encouraged from the buyer’s agent so the buyer knows what they’re in for.",
+            visible: false,
+        },
+        {
+            title: "What happens if a property gets appraised as lower than the loan amount?",
+            copy: " The buyer is responsible for making up the difference in cash outside of the loan or walking away from the home sale. Usually there is a contingency in the offer of the home appraising for the price the buyer is offering to pay.",
+            visible: false,
+        },
+        {
+            title: "Who is responsible for closing costs when purchasing/selling a home?",
+            copy: " Both the buyer and seller are responsible for their own set of closing costs, which include the origination and underwriting of a mortgage, taxes, insurance, and record filing. But remember some things can be negotiated!",
+            visible: false,
+        },
+        {
+            title: "Why the appraisal matter when buying/selling a house?",
+            copy: "The appraisal is done by a third party that the lender hires to give an unbiased, fair market value for what the house is worth in today’s market and in the condition it is in. If the home appraises for over or under what the buyer is paying it can make or break a deal.",
+            visible: false,
+        },
+        {
+            title: "What Is An Earnest Money Deposit?",
+            copy: 'AKA a "good faith deposit", is when a buyer puts a deposit down before closing on a property to show they are serious about purchasing the property.',
+            visible: false,
+        },
+
     ];
     const questions3 = [
         {
@@ -159,6 +230,32 @@ const Questions = () => {
             copy: "We are expanding into new markets! If you are interested, please inquire and we will reach out as soon as we make it to your area.",
             visible: false,
         },
+        {
+            title: "What is my commission as a buyer’s agent?",
+            copy: "While we do require a 1% commission when representing our sellers, HomeEasy Homes does not place restrictions on our buyers agents",
+            visible: false,
+        },
+        {
+            title: "Am I marketing the property like I would normally?",
+            copy: "Yes, just like any property, each listing is unique, so you'd want to market their property to shed the best light on the listing. We do however, require each of our 1% listings to have a minimum of two open houses.",
+            visible: false,
+        },
+        {
+            title: "Does HomeEasy home take a portion of the commission? If so, how much?",
+            copy: "HomeEasy Homes takes 35% of the commission if they are a preferred agent.",
+            visible: false,
+        },
+        {
+            title: "Do you have any realtors I can speak to about their experience with HomeEasy Homes?",
+            copy: "Yes! Which state are you in? Let's talk!",
+            visible: false,
+        },
+        {
+            title: "Why would I want to get buyer or seller referrals from HomeEasy Homes?",
+            copy: "Sellers (and buyers) are becoming more and more savvy and the NAR settlement has educated them to the fact that commissions are negotiable. Sellers today are looking to make the most money on the sale of their home. If they were not seeking out HomeEasy Homes, they most likely would be resorting to other options like flat fee listings, FSBO, & sites that have a very similar model. We want to partner with realtors who understand that the landscape is changing and want smooth and fast transactions from beginning to end.",
+            visible: false,
+        },
+       
        
     ];
     

@@ -78,7 +78,7 @@ const formatNumber = (number) => {
 
                     <div className={`${styles['main-copy-copy']}`}>Same day pre-approval. Ready to buy a home in today’s market? Speed is key, and we offer same-day pre-approvals for eligible buyers.</div>
 
-                    <div className={`${styles['main-copy-copy']}`}>We’ve got up to 10,000 reasons to work with us. Get 1.50% of your financed loan up to $10,000 towards your closing costs1.</div>
+                    <div className={`${styles['main-copy-copy']}`}>We’ve got up to 10,000 reasons to work with us. Get 1.50% of your financed loan up to $10,000 towards your closing costs<sup>1</sup>.</div>
                   
 
                     {/* <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
@@ -135,7 +135,7 @@ const formatNumber = (number) => {
             </div>
             <div className="col-12">
               <div className="d-flex">
-                <span className="me-2 mt-1">*1.5% of your loan amount</span>
+                <span className="me-2 mt-1">*1.5% of your loan amount up to $10,000.</span>
               </div> 
               <div className='loan'>
 

@@ -55,7 +55,7 @@ const Navbar = () => {
         },
         {
           title: "Browse homes",
-          link: "https://homeeasyhomes.idxbroker.com/idx/results/listings?pt=sfr&idxStatus=active&ccz=city&lp=100000&srt=newest&city%5B%5D=37986",
+          link: "/",
           gtag: "menu_buy_browse_homes",
         },
       ],
@@ -93,7 +93,7 @@ const Navbar = () => {
       links: [
         {
           title: "Today's rates",
-          link: "/mortgage",
+          link: "https://www.gethomeeasy.com/",
           gtag: "menu_mtg_todays_rates",
         },
         {
@@ -142,7 +142,7 @@ const Navbar = () => {
         {
           title: "Net proceeds",
           // link: "/calculator_proceeds",
-          link: "/calculator-2",
+          link: "/calculator-1",
           gtag: "menu_calc_net_proceeds",
         },
         {
