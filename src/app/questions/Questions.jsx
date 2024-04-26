@@ -1,4 +1,3 @@
-"use client"
 import { useState, useEffect } from 'react';
 import styles from './Questions.module.scss';
 import useWindowSize from '../../hooks/useWindowSize';
@@ -13,6 +12,7 @@ const Questions = () => {
 
     const selectedTab = useFlowGetStartedStore(state => state.selected_questions_tab_index);
     const setSelectedTab = useFlowGetStartedStore(state => state.setSelectedQuestionsTabIndex);
+
 
 
     // function changeIndex(idx) {
@@ -258,12 +258,47 @@ const Questions = () => {
        
        
     ];
-    
+
     const [questions, setQuestions] = useState(questions0);      
 
+    useEffect(() => {
+        // Update questions array based on selected tab index
+        if(selectedTab === 0) {
+            setQuestions(questions0);
+        }
+        if(selectedTab === 1) {
+            setQuestions(questions1);
+        }
+        if(selectedTab === 2) {
+            setQuestions(questions2);
+        }
+        if(selectedTab === 3) {
+            setQuestions(questions3);
+        }
+    }, [selectedTab]); // Run this effect whenever selectedTab changes
+
+    function toggleQuestion(index) {
+        // Function to toggle question visibility
+        const updatedQuestions = questions.map((item, i) => {
+            if(i === index) {
+                return {
+                    ...item,
+                    visible: !item.visible
+                };
+            } else {
+                return {
+                    ...item,
+                    visible: false
+                };
+            }
+        });
+        setQuestions(updatedQuestions);
+    }
+
     function changeTab(index) {
-        // false && console.log('changeTab', index);
+        // Function to change the selected tab
         setSelectedTab(index);
+        // Update questions array based on selected tab index
         if(index === 0) {
             setQuestions(questions0);
         }
@@ -277,24 +312,6 @@ const Questions = () => {
             setQuestions(questions3);
         }
     }
-
-    function toggleQuestion(index) {
-        // false && console.log('toggleQuestion', index);
-        let quest_prefixes = ["gen", "sell", "buy"];
-        doEventClick({"event_name": `quest_${quest_prefixes[selectedTab]}_${parseInt(index) + 1}`});
-
-
-        const tquestions = [...questions];
-        for(let i = 0; i < tquestions.length; i++) {
-            if(i === index) {
-                tquestions[i].visible = !tquestions[i].visible;
-            }else{
-                tquestions[i].visible = false;
-            }
-        }
-        setQuestions(tquestions);
-    }
-
     return (
         <div  className={styles['main-component']}>
                 <div className={`${styles['main-component-content-container']} centered-content`}>
