@@ -53,11 +53,11 @@ const Navbar = () => {
           link: "/buy",
           gtag: "menu_buy_how_works",
         },
-        {
-          title: "Browse homes",
-          link: "/",
-          gtag: "menu_buy_browse_homes",
-        },
+        // {
+        //   title: "Browse homes",
+        //   link: "/",
+        //   gtag: "menu_buy_browse_homes",
+        // },
       ],
       visible: false,
     },
