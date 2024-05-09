@@ -69,11 +69,11 @@ const Navbar = () => {
           link: "/instantoffer",
           gtag: "menu_sb_req_io",
         },
-        {
-          title: "Browse homes",
-          link: "https://homeeasyhomes.idxbroker.com/idx/results/listings?pt=sfr&idxStatus=active&ccz=city&lp=100000&srt=newest&city%5B%5D=37986",
-          gtag: "menu_sb_browse_homes",
-        },
+        // {
+        //   title: "Browse homes",
+        //   link: "https://homeeasyhomes.idxbroker.com/idx/results/listings?pt=sfr&idxStatus=active&ccz=city&lp=100000&srt=newest&city%5B%5D=37986",
+        //   gtag: "menu_sb_browse_homes",
+        // },
         {
           title: "See how much you save",
           // link: "/calculator_savings",
