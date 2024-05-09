@@ -223,12 +223,12 @@ const Footer = ({ centered_style }) => {
                                                         "callback",
                                                         "foot_1_buy_browse_homes",
                                                         () => {
-                                                            router.push(`https://homeeasyhomes.idxbroker.com/idx/results/listings?pt=sfr&idxStatus=active&ccz=city&lp=100000&srt=newest&city%5B%5D=37986`);
+                                                            router.push(`/buy`);
                                                         },
                                                     ]);
                                                 }}
                                             >
-                                                Browse homes
+                                                How it Works
                                             </a>{" "}
                                         </div>
                                     </div>
@@ -280,15 +280,15 @@ const Footer = ({ centered_style }) => {
                                                         "callback",
                                                         "foot_1_buy_sell_pricing",
                                                         () => {
-                                                            router.push(`/calculators`);
+                                                            router.push(`/calculator-2`);
                                                         },
                                                     ]);
                                                 }}
                                             >
-                                                Pricing
+                                                See how much you save
                                             </a>{" "}
                                         </div>
-                                        <div className={styles["upper-footer-content-left-links-link"]}>
+                                        {/* <div className={styles["upper-footer-content-left-links-link"]}>
                                             {" "}
                                             <a
                                                 className="underline-on-hover-red"
@@ -305,7 +305,7 @@ const Footer = ({ centered_style }) => {
                                             >
                                                 Browse homes
                                             </a>{" "}
-                                        </div>
+                                        </div> */}
                                     </div>
 
                                     {windowSize.width > 1023 && (
@@ -445,7 +445,7 @@ const Footer = ({ centered_style }) => {
                                                             "callback",
                                                             "foot_1_calc_net_proceeds",
                                                             () => {
-                                                                router.push(`/calculators`);
+                                                                router.push(`/calculator-1`);
                                                             },
                                                         ]);
                                                     }}
@@ -463,7 +463,7 @@ const Footer = ({ centered_style }) => {
                                                             "callback",
                                                             "foot_1_calc_he_savings",
                                                             () => {
-                                                                router.push(`/calculators`);
+                                                                router.push(`/calculator-2`);
                                                             },
                                                         ]);
                                                     }}
@@ -481,7 +481,7 @@ const Footer = ({ centered_style }) => {
                                                             "callback",
                                                             "foot_1_calc_est_mnt_pmts",
                                                             () => {
-                                                                router.push(`/calculators`);
+                                                                router.push(`/calculator-3`);
                                                             },
                                                         ]);
                                                     }}

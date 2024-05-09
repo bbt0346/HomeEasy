@@ -162,14 +162,15 @@ const Footer = ({centered_style}) => {
                                     </div>
                                     <div className={styles["upper-footer-content-left-links-item"]}>
                                         <div className={styles["upper-footer-content-left-links-title"]}>Buy</div>
-                                        <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_buy_browse_homes", ()=>{router.push(`https://homeeasyhomes.idxbroker.com/idx/results/listings?pt=sfr&idxStatus=active&ccz=city&lp=100000&srt=newest&city%5B%5D=37986`);}]);}}>Browse homes</a> </div>
+                                        <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_buy_sell_how_works", ()=>{router.push(`/buy`);}]);}}>How it works</a> </div>
+                                        {/* <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_buy_browse_homes", ()=>{router.push(`https://homeeasyhomes.idxbroker.com/idx/results/listings?pt=sfr&idxStatus=active&ccz=city&lp=100000&srt=newest&city%5B%5D=37986`);}]);}}>Browse homes</a> </div> */}
                                     </div>
                                     <div className={styles["upper-footer-content-left-links-item"]}>
                                         <div className={styles["upper-footer-content-left-links-title"]}>Sell &amp; Buy</div>
                                         <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_buy_sell_how_works", ()=>{router.push(`/buyandsell`);}]);}}>How it works</a> </div>
                                         <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_buy_sell_req_io", ()=>{router.push(`/instantoffer`);}]);}}>Request an InstantOffer</a> </div>
                                         <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_buy_sell_pricing", ()=>{router.push(`/calculator-1`);}]);}}>Pricing</a> </div>
-                                        <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_buy_sell_brows_homes", ()=>{router.push(`https://homeeasyhomes.idxbroker.com/idx/results/listings?pt=sfr&idxStatus=active&ccz=city&lp=100000&srt=newest&city%5B%5D=37986`);}]);}}>Browse homes</a> </div>
+                                        {/* <div className={styles["upper-footer-content-left-links-link"]}> <a className='underline-on-hover-red' onClick={(e) => {e.preventDefault(); gtmPush(["callback", "foot_1_buy_sell_brows_homes", ()=>{router.push(`https://homeeasyhomes.idxbroker.com/idx/results/listings?pt=sfr&idxStatus=active&ccz=city&lp=100000&srt=newest&city%5B%5D=37986`);}]);}}>Browse homes</a> </div> */}
                                     </div>
 {/* 
                                     {windowSize.width > 1023 && 
