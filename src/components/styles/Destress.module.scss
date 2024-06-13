@@ -96,7 +96,7 @@
 .transparentprocess-content-image-holder3 { 
     width: 31.4583vw;
     // background-color: red;
-    background-image: url('/img/buy_sell_image.webp');
+    background-image: url('/img/buy_sell_image.svg');
     background-repeat: no-repeat;
     @media (min-width: 1024px) and (max-width: 1919px) {
         // overflow: hidden;
@@ -112,7 +112,7 @@
         position: absolute;
         @media (min-width: 0px) and (max-width: 1023px) {
             content: '';
-            background-image: url('/img/buy_sell_image.webp');
+            background-image: url('/img/buy_sell_image.svg');
             background-repeat: no-repeat;
             background-position: center;
             width: 100vw !important;
