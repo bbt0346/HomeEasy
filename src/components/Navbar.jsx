@@ -241,7 +241,7 @@ const Navbar = () => {
                  {isErrorPage ?  <img
                 src="/img/morgage-logo.png"
                 alt="Home Easy Homes"
-                style={{width:'220px',height:'auto'}}
+                style={{width:'230px',height:'auto',marginTop:'-6px'}}
               /> :  <img
                 src="/img/home_easy_homes_logo.svg"
                 alt="Home Easy Homes"
