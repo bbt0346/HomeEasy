@@ -404,23 +404,23 @@ const Navbar = () => {
                       Account Settings
                     </a>
                   </div>
-                  <hr />
-                  <div className={styles["header-idx-menu-link"]}>
+                  {/* <hr /> */}
+                  {/* <div className={styles["header-idx-menu-link"]}>
                     <a
                       href="https://homeeasyhomes.idxbroker.com/idx/myaccount#/settings"
                       target="_blank"
                     >
                       Sign Out
                     </a>
-                  </div>
-                  <div className={styles["signup-btn"]}>
+                  </div> */}
+                  {/* <div className={styles["signup-btn"]}>
                     <a
                       href="https://homeeasyhomes.idxbroker.com/idx/myaccount#/settings"
                       target="_blank"
                     >
                       Sign Up
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               )}
             </div>
